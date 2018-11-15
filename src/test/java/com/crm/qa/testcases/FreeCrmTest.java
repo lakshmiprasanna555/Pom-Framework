@@ -20,7 +20,7 @@ public class FreeCrmTest {
 
 	@BeforeMethod
 	public void setUp() throws Exception {
-		System.setProperty("webdriver.chrome.driver", "/Users/prasanna/Downloads/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\Downloads\\PageObjectModel-master\\Resource\\chromedriver.exe");
 		driver = new ChromeDriver();
 		js = (JavascriptExecutor) driver;
 		driver.get("https://www.freecrm.com/index.html");
@@ -83,7 +83,7 @@ public class FreeCrmTest {
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		// now copy the screenshot to desired location using copyFile //method
 		FileUtils.copyFile(src, 
-				new File("/Users/prasanna lakshmi/Documents/MyPOMFramework/PageObjectModel/screenshots/" + fileName +".png"));
+				new File("C:\\Users\\User\\Downloads\\PageObjectModel-master\\screenshots\\" + fileName +".png"));
 
 	}
 
